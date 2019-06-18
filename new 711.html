@@ -12,24 +12,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://siemenscrm--uspoc1.lightning.force.com/canvas/sdk/js/44.0/canvas-all.js"></script>
 <script>
-jQuery(window).load(function () {
-   var sizes = Sfdc.canvas.client.size();
-            console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
-            console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight);
-   
-    setTimeout(function () {
-        var sizes = Sfdc.canvas.client.size();
-            console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
-            console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight); 
-    }, 2000); 
-    
-});
-$( document ).ready(function() {
-    console.log( "ready!" );
-	var sizes = Sfdc.canvas.client.size();
+$(window).load(function(){
+    var sizes = Sfdc.canvas.client.size();
             console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
             console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight);
 });
+
 function showCurrentSize() {
         var sizes = Sfdc.canvas.client.size();
        console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
