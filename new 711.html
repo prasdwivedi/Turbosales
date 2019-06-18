@@ -6,13 +6,13 @@
 <input type="button" runat="server" class="button" value="Edit" onclick="showCurrentSize();" id="btnEdit" />
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKseX4Vp923LF7OMZro9621GDZrippzg5SkY9kIrpTSG-CtyP" alt="Cinqueterra" width="304" height="236">
 
-<p><b>Note:</b> Depending on the browser, the load event may not trigger if the image is cached</p>
+<p><b>Note:</b> Depending on the browser, the load event may not trigger if the image is cachedssssssssssss</p>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://siemenscrm--uspoc1.lightning.force.com/canvas/sdk/js/44.0/canvas-all.js"></script>
 <script>
-var fnc=function(){
+/*var fnc=function(){
         alert("Window Loaded");
 		var sizes = Sfdc.canvas.client.size();
             console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
@@ -25,7 +25,7 @@ var fnc=function(){
 		clearInterval();
     });
 
-/*$( document ).ready(function() {
+$( document ).ready(function() {
     console.log( "ready!" );
 	var sizes = Sfdc.canvas.client.size();
             console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
@@ -36,5 +36,17 @@ function showCurrentSize() {
        console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
             console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight);
     }
+	$(document).ready(function() {
+	         var countTime = 0;
+	         var storeTimeInterval = setInterval(function(){
+	        	++countTime;
+	        	if(countTime == 2){
+	        		clearInterval(storeTimeInterval);
+	        		var sizes = Sfdc.canvas.client.size();
+					console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
+					console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight);
+	        	}
+	         }, 5000);
+	        });
 </script>
 </html>
