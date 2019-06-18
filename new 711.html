@@ -6,15 +6,16 @@
 <input type="button" runat="server" class="button" value="Edit" onclick="showCurrentSize();" id="btnEdit" />
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKseX4Vp923LF7OMZro9621GDZrippzg5SkY9kIrpTSG-CtyP" alt="Cinqueterra" width="304" height="236">
 
-<p><b>Note:</b> Depending on the browsers  dasdassas</p>
+<p><b>Note:</b> Depending on the browser, the load event may not trigger if the image is cached.333333333333333</p>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://login.salesforce.com/canvas/sdk/js/44.0/canvas-all.js"></script>
 <script>
-$(document).ready(function(){
-  var sizes = Sfdc.canvas.client.size();
-       console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
+$( document ).ready(function() {
+    console.log( "ready!" );
+	var sizes = Sfdc.canvas.client.size();
+            console.log("showCurrentSize pageWidth: " + sizes.widths.pageWidth);
             console.log("showCurrentSize pageHeight: " + sizes.heights.pageHeight);
 });
 function showCurrentSize() {
